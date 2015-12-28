@@ -1,1 +1,1 @@
-angus-api-framework
+angus-framework
