@@ -43,7 +43,7 @@ def main():
         'dummy', 1,
         PORT,
         compute,
-        resource_storage=angus.storage.MemoryStorage, threads=1
+        resource_storage=angus.storage.MemoryStorage(), threads=1
     )
     service.start()
 
