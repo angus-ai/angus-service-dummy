@@ -22,6 +22,7 @@ import logging
 import os
 
 import angus.service
+import angus.storage
 
 PORT = os.environ.get('PORT', 9000)
 
@@ -42,7 +43,7 @@ def main():
         'dummy', 1,
         PORT,
         compute,
-        resource_storage=dict(), threads=1
+        resource_storage=angus.storage.MemoryStorage, threads=1
     )
     service.start()
 
