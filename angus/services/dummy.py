@@ -24,7 +24,7 @@ import os
 import angus.service
 import angus.storage
 
-PORT = os.environ.get('PORT', 9000)
+PORT = os.environ.get('PORT', 8080)
 
 LOGGER = logging.getLogger('dummy')
 
